@@ -78,37 +78,68 @@
   <div class="main">
     <div id="header" style="height: 100px; overflow: hidden;">
     </div>
-    <h1>Cartera</h1>
-    <h2>Variación mensual</h2>
-    <p>Este gráfico le muestra la evolucion de su cartera según los meses. En azul las aportaciones que ha realizado y
-      en rojo las ganancias/perdidas</p>
-    <iframe src="assets/plotly/month_gains.html" frameborder="0" width="100%" height="800px
-    "></iframe>
-    <br> <br>
-    <h2>Distribución ETFs</h2>
-    <p>Este gráfico le muestra la distribución de su cartera según los diferentes ETFs en los que invierte</p>
-    <iframe src="assets/plotly/distribution.html" frameborder="0" width="100%" height="800px"></iframe>
-    <br> <br>
-    <h2>Distribución acciones</h2>
-    <p>Este gráfico le muestra las acciones en las que está invertido y el peso que tienen en su cartera en %</p>
-    <iframe src="assets/plotly/stocks.html" frameborder="0" width="100%" height="800px"></iframe>
+    <h1>Cartera:</h1>
 
-    <!-- create a form where I can add a stock symbol, a date, a quantity of stocks bought and a price -->
-    <br> <br>
-    <form action="portfolio.html" method="post">
-      <label for="symbol">Symbol:</label><br>
-      <input type="text" id="symbol" name="symbol" placeholder="Ticker symbol of the stock"><br><br>
-      <label for="date">Date:</label><br>
-      <input type="date" id="date" name="date"><br><br>
-      <label for="quantity">Quantity:</label><br>
-      <input type="number" id="quantity" name="quantity" placeholder="Number of stocks bought"><br><br>
-      <label for="price">Price:</label><br>
-      <input type="number" id="price" name="price" placeholder="$"><br><br>
+    <aside>
+      <details>
+        <summary>
+          Añadir valores:
+        </summary>
+        <form action="portfolio.html" method="post">
+          <br>
+          <label for="symbol">Símbolo:</label><br>
+          <input type="text" id="symbol" name="symbol" placeholder="Ticker symbol de la acción"><br><br>
+          <label for="date">Fecha:</label><br>
+          <input type="date" id="date" name="date"><br><br>
+          <label for="quantity">Cantidad:</label><br>
+          <input type="number" id="quantity" name="quantity" placeholder="Number of stocks bought"><br><br>
+          <label for="price">Precio:</label><br>
+          <input type="number" id="price" name="price" placeholder="$"><br><br>
+    
+          <input type="submit" id="submit">
+        </form>
+      </details>
+    </aside>
 
+    <br><br>
+      <table>
+        <tr>
+          <th>Fecha de compra</th>
+          <th>Símbolo</th>
+          <th>Número de acciones</th>
+          <th>Precio de compra</th>
+        </tr>
+        <!-- complete with some trades ondifferent dates and different stocks and different prices -->
+        <tr>
+          <td>2020-01-01</td>
+          <td>MSFT</td>
+          <td>58</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>2021-01-01</td>
+          <td>AAPL</td>
+          <td>93</td>
+          <td>102</td>
+        </tr>
+        <tr>
+          <td>2021-06-01</td>
+          <td>AMZN</td>
+          <td>10</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <td>2020-01-01</td>
+          <td>NVDA</td>
+          <td>23</td>
+          <td>120</td>
+        </tr>
 
-      <input type="submit" id="submit">
+      </table>
 
-    </form>
+    
+    
+
 
     <div id="footer"></div>
   </div>

@@ -52,7 +52,7 @@
   </style>
 
   <meta charset="UTF-8">
-  <title>Cartera</title>
+  <title>Resumen</title>
   <link rel="icon" href="assets/images/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="main.css" type="text/css">
 
@@ -78,7 +78,7 @@
   <div class="main">
     <div id="header" style="height: 100px; overflow: hidden;">
     </div>
-    <h1>Cartera</h1>
+    <h1>Resumen cartera:</h1>
     <h2>Variación mensual</h2>
     <p>Este gráfico le muestra la evolucion de su cartera según los meses. En azul las aportaciones que ha realizado y
       en rojo las ganancias/perdidas</p>
@@ -93,22 +93,8 @@
     <p>Este gráfico le muestra las acciones en las que está invertido y el peso que tienen en su cartera en %</p>
     <iframe src="assets/plotly/stocks.html" frameborder="0" width="100%" height="800px"></iframe>
 
-    <!-- create a form where I can add a stock symbol, a date, a quantity of stocks bought and a price -->
-    <br> <br>
-    <form action="portfolio.html" method="post">
-      <label for="symbol">Symbol:</label><br>
-      <input type="text" id="symbol" name="symbol" placeholder="Ticker symbol of the stock"><br><br>
-      <label for="date">Date:</label><br>
-      <input type="date" id="date" name="date"><br><br>
-      <label for="quantity">Quantity:</label><br>
-      <input type="number" id="quantity" name="quantity" placeholder="Number of stocks bought"><br><br>
-      <label for="price">Price:</label><br>
-      <input type="number" id="price" name="price" placeholder="$"><br><br>
+  
 
-
-      <input type="submit" id="submit">
-
-    </form>
 
     <div id="footer"></div>
   </div>
