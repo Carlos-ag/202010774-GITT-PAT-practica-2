@@ -12,8 +12,3 @@ Para visualizar la página web desde un navegador se puede acceder al siguiente 
 
 ## Documentación:
 Para editarla la página web en VSCODE, hay que abrir la carpeta HTML, que no incluye el README.md.
-
-
-## TODO:
-revisar los required de los formularios
-refactor del codigo css
