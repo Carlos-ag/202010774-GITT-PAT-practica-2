@@ -1,0 +1,88 @@
+@media screen and (min-width: 767px) {
+  .header {
+    width: 84vw;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    z-index: 1;
+    margin-left: 15vw;
+  }
+  .main {
+    width: 84vw;
+    margin-left: 15vw; /* Same as the width of the sidenav */
+    padding: 0% 1%;
+    left: 0;
+  }
+  .sidenav {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .main {
+    position: absolute;
+    top: 20.5vh;
+    left: 0;
+    padding: 0 20px;
+  }
+  .sidenav {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #111;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+  .sidenav a {
+    display: inline-block;
+    font-size: 2.6vw;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .sidenav a:hover {
+    background-color: #555;
+  }
+}/*# sourceMappingURL=layout.css.map */

@@ -16,19 +16,32 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 0.25fr 3fr;
   gap: 5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .slogan {
@@ -36,9 +49,15 @@ img {
   grid-column-end: 3;
   font-size: 1.5em;
   /* vertical align in the div */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: top;
-  justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-form {
@@ -47,6 +66,10 @@ img {
 }
 
 input:invalid:not(:-moz-placeholder-shown), textarea:invalid:not(:-moz-placeholder-shown) {
+  border: 2px solid red;
+}
+
+input:invalid:not(:-ms-input-placeholder), textarea:invalid:not(:-ms-input-placeholder) {
   border: 2px solid red;
 }
 
@@ -59,16 +82,36 @@ input:invalid:focus:not(:-moz-placeholder-shown), textarea:invalid:focus:not(:-m
   outline: none;
 }
 
+input:invalid:focus:not(:-ms-input-placeholder), textarea:invalid:focus:not(:-ms-input-placeholder) {
+  outline: none;
+}
+
 input:invalid:focus:not(:placeholder-shown),
 textarea:invalid:focus:not(:placeholder-shown) {
   outline: none;
+}
+
+input:invalid:not(:placeholder-shown)::-webkit-input-placeholder, textarea:invalid:not(:placeholder-shown)::-webkit-input-placeholder {
+  color: red;
 }
 
 input:invalid:not(:placeholder-shown)::-moz-placeholder, textarea:invalid:not(:placeholder-shown)::-moz-placeholder {
   color: red;
 }
 
+input:invalid:not(:placeholder-shown):-ms-input-placeholder, textarea:invalid:not(:placeholder-shown):-ms-input-placeholder {
+  color: red;
+}
+
+input:invalid:not(:placeholder-shown)::-ms-input-placeholder, textarea:invalid:not(:placeholder-shown)::-ms-input-placeholder {
+  color: red;
+}
+
 input:invalid:not(:-moz-placeholder-shown)::placeholder, textarea:invalid:not(:-moz-placeholder-shown)::placeholder {
+  color: red;
+}
+
+input:invalid:not(:-ms-input-placeholder)::placeholder, textarea:invalid:not(:-ms-input-placeholder)::placeholder {
   color: red;
 }
 
@@ -78,6 +121,10 @@ textarea:invalid:not(:placeholder-shown)::placeholder {
 }
 
 #my-form:invalid:not(:-moz-placeholder-shown) ~ #popup {
+  display: block;
+}
+
+#my-form:invalid:not(:-ms-input-placeholder) ~ #popup {
   display: block;
 }
 
