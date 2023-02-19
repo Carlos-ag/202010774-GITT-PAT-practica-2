@@ -58,11 +58,11 @@ $main-width: 100vw - $sidenav-width - 5vw;
 
   
   @media screen and (max-width: 767px) {
-    $sidenav-height: 80px;
+    $sidenav-height: 10vh;
     
     
     .header {
-    height: $sidenav-height;
+    height: $sidenav-height*1.05;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -79,7 +79,7 @@ $main-width: 100vw - $sidenav-width - 5vw;
     
     .main {
     position: absolute;
-    top: $header-height*2.05;
+    top: $header-height*2.1;
     left: 0;
     width: 93%;
     padding: 0 20px;
@@ -95,7 +95,11 @@ $main-width: 100vw - $sidenav-width - 5vw;
     background-color: #111;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px 0;
+    // padding: 10px 0;
+    padding-top: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+ 
     }
 
 
@@ -104,7 +108,7 @@ $main-width: 100vw - $sidenav-width - 5vw;
     
     .sidenav a {
     display: inline-block;
-    font-size: 2.6vw;
+    font-size: 2vw;
     padding: 10px;
     color: #fff;
     text-decoration: none;

@@ -1,3 +1,4 @@
+@media screen and (min-width: 767px) {
   $sidenav-width: 10vw;
   .sidenav {
     
@@ -17,7 +18,7 @@
   .sidenav a:hover {
     color: #f1f1f1;
   }
-
+}
   @media screen and (max-width: 767px) {
     .sidenav {
     display: flex;
@@ -29,7 +30,7 @@
     }
     
     .sidenav a {
-    font-size: 3vw;
+    font-size: 1vw;
     padding: 6px;
     text-decoration: none;
     color: #818181;

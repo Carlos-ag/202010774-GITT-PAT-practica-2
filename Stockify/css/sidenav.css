@@ -1,19 +1,18 @@
-.sidenav > * {
-  margin: 1vw 0 1vw 1vw;
+@media screen and (min-width: 767px) {
+  .sidenav > * {
+    margin: 1vw 0 1vw 1vw;
+  }
+  .sidenav a {
+    font-size: 1.5vw;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
 }
-
-.sidenav a {
-  font-size: 1.5vw;
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
 @media screen and (max-width: 767px) {
   .sidenav {
     display: -webkit-box;
@@ -32,7 +31,7 @@
     background-color: #f1f1f1;
   }
   .sidenav a {
-    font-size: 3vw;
+    font-size: 1vw;
     padding: 6px;
     text-decoration: none;
     color: #818181;
