@@ -13,14 +13,30 @@
     color: #818181;
     display: block;
   }
-  // .sidenav a {
-  //   padding: 6px 8px 6px 16px;
-  //   text-decoration: none;
-  //   font-size: 25px;
-  //   color: #818181;
-  //   display: block;
-  // }
 
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+  @media screen and (max-width: 767px) {
+    .sidenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #f1f1f1;
+    }
+    
+    .sidenav a {
+    font-size: 3vw;
+    padding: 6px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    }
+    
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+    }

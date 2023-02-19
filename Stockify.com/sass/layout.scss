@@ -3,12 +3,13 @@ $sidenav-width: 15vw;
 $main-width: 100vw - $sidenav-width;
 
 .header {
-    width: 100%;
-    height: $header-height;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
 .main {
     width: $main-width -5vw;
@@ -31,3 +32,44 @@ $main-width: 100vw - $sidenav-width;
     // space elements by 10px
 
   }
+
+  @media screen and (max-width: 767px) {
+    $sidenav-height: 80px;
+    $main-width: 100vw;
+    
+    .header {
+    height: $sidenav-height;
+    }
+    
+    .main {
+    width: $main-width;
+    margin-left: 0;
+    padding: 0 20px;
+    }
+    
+    .sidenav {
+    width: 100%;
+    height: $sidenav-height;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: #111;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    }
+    
+    .sidenav a {
+    display: inline-block;
+    font-size: 3vw;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .sidenav a:hover {
+    background-color: #555;
+    }
+    }
