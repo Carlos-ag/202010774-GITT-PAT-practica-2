@@ -2,46 +2,11 @@
 <html>
 
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/sidenav.css">
   <style>
-    body {
-      font-family: "Lato", sans-serif;
-    }
-
-    .sidenav {
-      height: 100%;
-      width: 160px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-
-    .sidenav a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .main {
-      margin-left: 160px;
-      /* Same as the width of the sidenav */
-      font-size: 28px;
-      /* Increased text to enable scrolling */
-      padding: 0px 10px;
-    }
-
     @media screen and (max-height: 450px) {
       .sidenav {
         padding-top: 15px;
@@ -70,6 +35,32 @@
     });
   </script>
   
+  <script>
+    function handleFormSubmit() {
+      const symbol = document.getElementById("symbol").value;
+      const date = document.getElementById("date").value;
+      const quantity = document.getElementById("quantity").value;
+      const price = document.getElementById("price").value;
+    
+      if (!symbol || !date || !quantity || !price) {
+        alert("Por favor, rellena todos los campos requeridos.");
+        return;
+      }
+    
+      // Perform any additional validation or data processing here
+    
+      // Show success message
+      show("Acción añadida");
+    
+      // Submit form
+      document.querySelector("form").submit();
+    }
+    
+    function show(message) {
+      alert(message);
+    }
+    </script>
+
 </head>
 
 <body>
@@ -88,7 +79,7 @@
         <summary>
           Añadir valores:
         </summary>
-        <form action="portfolio.html" method="post">
+        <form action="portfolio.html" method="post" onsubmit="event.preventDefault(); handleFormSubmit();">
           <br>
           <label for="symbol">Símbolo:</label><br>
           <input type="text" id="symbol" name="symbol" placeholder="Ticker symbol de la acción" required><br><br>

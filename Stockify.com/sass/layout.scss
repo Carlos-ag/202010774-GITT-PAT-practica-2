@@ -1,0 +1,33 @@
+$header-height: 10vh;
+$sidenav-width: 15vw;
+$main-width: 100vw - $sidenav-width;
+
+.header {
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.main {
+    width: $main-width -5vw;
+    margin-left: $sidenav-width; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    
+  }
+
+  
+  .sidenav {
+    height: 100%;
+    width: $sidenav-width;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 3%;
+    // space elements by 10px
+
+  }

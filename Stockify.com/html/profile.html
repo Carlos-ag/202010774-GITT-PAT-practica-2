@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Perfil</title>
 
-<meta charset="UTF-8">
-    <title>Perfil</title>
-    <link rel="icon" href="logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); 
-    $("#footer").load("footer.html"); 
-    $("#sidebar").load("sidebar.html"); 
-    
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+      $("#sidebar").load("sidebar.html");
+
     });
-    </script> 
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/sidenav.css">
+  </script>
+
+  <link rel="icon" href="../assets/images/logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/sidenav.css" type="text/css">
+  <link rel="stylesheet" href="../css/layout.css" type="text/css">
 </head>
+
 <body>
 
-   
-<div id="sidebar" style="height: 100%; overflow: hidden;">
-</div>
 
-<div class="main">
-    <div id="header" style="height: 100px; overflow: hidden;">
+  <div id="sidebar" style="height: 100%; overflow: hidden;">
+  </div>
+
+  <div class="main">
+    <!-- style="height: 100px; overflow: hidden;" -->
+    <div id="header" > 
     </div>
-  <h1>Hola, Carlos</h1>
-  <form action="">
-    <label for="fname">Nombre:</label>
-    <input type="text" id="fname" name="fname" value="Carlos"><br><br>
-    <label for="lname">Apellido:</label>
-    <input type="text" id="lname" name="lname" value="Martín de Argila"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value="202010774@alu.comillas.edu"><br><br>
-    <center>
-      <input type="submit" value="Enviar">
-    </center>
+    <div class="body">
+      <h1>Hola, Carlos</h1>
+      <form action="">
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname" value="Carlos"><br><br>
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" name="lname" value="Martín de Argila"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="202010774@alu.comillas.edu"><br><br>
+        <center>
+          <input type="submit" class="fun-button" value="Enviar">
+        </center>
+  
+      </form>
+    </div> 
+    <div id="footer"></div>
+  </div>
 
-  </form>
-
-  <div id="footer"></div>
-</div>
-   
 </body>
-</html> 
+
+</html>

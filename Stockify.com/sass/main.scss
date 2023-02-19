@@ -1,0 +1,131 @@
+$primary-color: #333;
+$secondary-color: #eee;
+$background-color: #111;
+$secondary-background-color: #222;
+$ligh-gray:#6c757d;
+$dark-gray: #343a40;
+
+html {
+  font-size: 1.3vw;
+}
+
+*{
+  font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: $primary-color;
+    color: whitesmoke;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: #eee;
+}
+
+  
+
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $ligh-gray;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: $dark-gray;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  td, th {
+    text-align: center;
+  }
+
+  td, th {
+    vertical-align: middle;
+  }
+
+  #footer {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  input[type=submit] {
+    background-color: whitesmoke;
+    color: $primary-color;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #6c757d;
+  } 
+
+// create a css for a class link-news and link-news:hover that has a photo on the left and then on the right, it has a title, a date and a description of the news article. The title should be bold, the date should be normal and the description on italic
+
+.link-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: $dark-gray;
+    margin-bottom: 1%;
+  }
+  
+  .link-news:hover {
+    background-color: $ligh-gray;
+  }
+  
+  .link-news > * {
+    margin: 10px;
+  }
+  
+  .link-news > img {
+    width: 10%;
+    object-fit: cover; 
+  }
+  
+  .link-news > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .link-news > div > * {
+    text-align: left;
+    margin: 0;
+  }
+  
+  .link-news > div > h3 {
+    font-weight: bold;
+  }
+  
+  .link-news > div > p {
+    font-style: italic;
+  }

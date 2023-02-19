@@ -1,7 +1,8 @@
 # Administrador cartera de acciones
 
 ## Introducción:
-Está página web está siendo realizada en el cuadro de PROGRAMACIÓN DE APLICACIONES TELEMÁTICAS. La utilidad de la página es el de facilitar información al usuario sobre su cartera de acciones y permitirle en unos minutos tener un resumen de la evolución de esta en los últimos días/meses/años. Las técnologías usadas por el momento son HTML, CSS, Javascript, Python y Plotly. Estos dos últimos se han usado para crear los gráficos que se muestran gracias a iframes.
+Está página web está siendo realizada en el cuadro de PROGRAMACIÓN DE APLICACIONES TELEMÁTICAS. La utilidad de la página es el de facilitar información al usuario sobre su cartera de acciones y permitirle en unos minutos tener un resumen de la evolución de esta en los últimos días/meses/años. Las técnologías usadas por el momento son HTML, CSS, Javascript, Python y Plotly. 
+También se ha usado SASS para facilitar el desarrollo de los archivos CSS. Para ello se ha usado la extensión de VSCode llamada Live Sass Compiler, que compila los archivos SASS a CSS en tiempo real. Se ha configurado esta extensión para que guarde los archivos en la carpeta CSS (y no en la carpeta SASS).
 
 ## Instalación:
 Necesita un editor de texto como puede ser VSCode y un navegador para visualizar la página web.
