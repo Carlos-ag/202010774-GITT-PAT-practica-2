@@ -41,9 +41,15 @@ $main-width: 100vw - $sidenav-width -5vw;
     
     .header {
     height: $sidenav-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
     }
     
     .main {
+
     width: $main-width;
     margin-left: 0;
     padding: 0 20px;
@@ -54,7 +60,8 @@ $main-width: 100vw - $sidenav-width -5vw;
     height: $sidenav-height;
     position: fixed;
     z-index: 1;
-    bottom: 0;
+    position: absolute;
+    top: $sidenav-height + 5vh;
     left: 0;
     background-color: #111;
     overflow-y: hidden;
