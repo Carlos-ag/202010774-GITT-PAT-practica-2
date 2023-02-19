@@ -1,19 +1,28 @@
 $header-height: 10vh;
 $sidenav-width: 15vw;
-$main-width: 100vw - $sidenav-width - 1vw;
+$main-width: 100vw - $sidenav-width - 5vw;
 @media screen and (min-width: 767px) {
 
 
 .header {
   width: $main-width;
   height: $header-height;
+  margin-left: $sidenav-width;
+  z-index: 1;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   align-content: center;
   text-align: center;
-  z-index: 1;
-  margin-left: $sidenav-width;
+  
+  
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // align-content: center;
+  // text-align: center;
+  
 
 }
 
@@ -72,7 +81,7 @@ $main-width: 100vw - $sidenav-width - 1vw;
     position: absolute;
     top: $header-height*2.05;
     left: 0;
-    // width: 100%;
+    width: 93%;
     padding: 0 20px;
     }
     
