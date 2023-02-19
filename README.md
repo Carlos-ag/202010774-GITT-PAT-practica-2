@@ -15,7 +15,7 @@ Necesita un editor de texto como puede ser VSCode y un navegador para visualizar
 Si lo desea para facilitar el desarrollo de la página web puede la extensión de VSCode llamada Live Server que sirve para ver en directo los cambios realizados en el HTML sin necesidad de recargar la página web. También recomendamos el uso de Live Sass Compiler para facilitar el desarrollo de los archivos CSS ya que compila los archivos SASS a CSS en tiempo real.
 
 ## Uso:
-Para visualizar la página web desde un navegador se puede acceder al siguiente enlace [Administrador cartera de acciones](https://carlos-ag.github.io/202010774-GITT-PAT-practica-2/Stockify/html/index.html)
+Para visualizar la página web desde un navegador se puede acceder al siguiente enlace [Stockify](https://carlos-ag.github.io/202010774-GITT-PAT-practica-2/Stockify/html/index.html)
 
 ## Documentación:
 Para editarla la página web en VSCODE, hay que abrir la carpeta Stockify, que no incluye el README.md.
