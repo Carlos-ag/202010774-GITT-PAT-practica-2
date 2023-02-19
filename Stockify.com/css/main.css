@@ -73,6 +73,10 @@ input[type=submit]:hover {
   background-color: #6c757d;
 }
 
+.plotly-graph {
+  height: 70vh;
+}
+
 .link-news {
   display: flex;
   flex-direction: row;

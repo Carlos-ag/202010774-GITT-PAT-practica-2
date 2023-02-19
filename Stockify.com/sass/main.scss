@@ -83,7 +83,10 @@ a:hover, a:active {
     background-color: #6c757d;
   } 
 
-// create a css for a class link-news and link-news:hover that has a photo on the left and then on the right, it has a title, a date and a description of the news article. The title should be bold, the date should be normal and the description on italic
+
+.plotly-graph {
+  height: 70vh;
+}
 
 .link-news {
     display: flex;
