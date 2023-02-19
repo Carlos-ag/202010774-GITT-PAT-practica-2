@@ -18,4 +18,4 @@ Si lo desea para facilitar el desarrollo de la página web puede la extensión d
 Para visualizar la página web desde un navegador se puede acceder al siguiente enlace [Administrador cartera de acciones](https://carlos-ag.github.io/Website/html/)
 
 ## Documentación:
-Para editarla la página web en VSCODE, hay que abrir la carpeta HTML, que no incluye el README.md.
+Para editarla la página web en VSCODE, hay que abrir la carpeta Stockify, que no incluye el README.md.
