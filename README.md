@@ -8,6 +8,8 @@ La página web funciona tanto en ordenadores como en dispositivos móviles y ade
 
 Las técnologías usadas por el momento son HTML, CSS, Javascript, Python y Plotly.
 
+Para familiarizarnos con los frameworks, hemos incluido Bootstrap en la página de login.
+
 También se ha usado SASS para facilitar el desarrollo de los archivos CSS. Para ello se ha usado la extensión de VSCode llamada Live Sass Compiler, que compila los archivos SASS a CSS en tiempo real. Se ha configurado esta extensión para que guarde los archivos en la carpeta CSS (y no en la carpeta SASS).
 
 ## Instalación:
